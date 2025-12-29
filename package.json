@@ -1,14 +1,18 @@
 {
-  "dependencies": {
-    "bcrypt": "^6.0.0",
-    "bcryptjs": "^3.0.3",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.2",
-    "node-cron": "^4.2.1",
-    "pg": "^8.16.3",
-    "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.1"
+  "name": "curitransporte",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "api"
+  ],
+  "scripts": {
+    "start": "npm run start --workspace api",
+    "dev": "npm run dev --workspace api",
+    "start:https": "npm run start:https --workspace api",
+    "start:https:strict": "npm run start:https:strict --workspace api",
+    "lint": "npm run lint --workspace api",
+    "test": "npm run test --workspace api",
+    "format": "npm run format --workspace api",
+    "generate-certs": "npm run generate-certs --workspace api"
   }
 }
